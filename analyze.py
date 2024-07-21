@@ -189,10 +189,11 @@ def process_year(year: int, dumb_format: bool = False):
 
 			print(f"#{rank_t2} {candidate.name} (was #{rank_t1})")
 
-			if rank_t2 > 5:
-				break
+			# if rank_t2 > 5:
+			# 	break
 
 		# print('-----')
+		print('')
 
 	percent_of_surprises = 100 * len(surprises) / float(len(elections.elections))
 	print()
@@ -201,12 +202,12 @@ def process_year(year: int, dumb_format: bool = False):
 
 
 if __name__ == '__main__':
-	# process_year(1958)
+	process_year(1958)
 	# process_year(1962)
 	# process_year(1967)
 	# process_year(1968)
 	# process_year(1973)
 	# process_year(1978)
-	process_year(1981)
+	# process_year(1981)
 	# process_year(1988, dumb_format=True)
 	# process_year(1993, dumb_format=True)
